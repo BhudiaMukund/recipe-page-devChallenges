@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  padding: 52px 236px;
+}
+
+header > h1 {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-size: 48px;
+  color: #000000;
+}
+
+.intro {
+  display: flex;
+  align-items: start;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.intro img {
+  margin-top: 4px;
+}
+
+.intro p {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 14px;
+  width: 592px;
+  color: #4f4f4f;
+}
+
+main > img {
+  width: 100%;
+  margin-top: 42px;
+}
+
+.flex-container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  justify-content: space-between;
+  margin-top: 42px;
+}
+
+section > article > h1 {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  color: #333333;
+  margin: 30px 0;
+}
+
+section > article > div > h1 {
+  font-family: "Playfair Display";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 18px;
+  color: #333333;
+  margin: 25px 0;
+}
+
+.list-item {
+  display: flex;
+  align-items: start;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.bt {
+  width: 21px;
+  height: 21px;
+  border: 1px solid #828282;
+  border-radius: 4px;
+  display: block;
+}
+
+.ingredients p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+  color: #333333;
+}
+
+.li {
+  padding: 6px 13px;
+  background: #f2994a;
+  border-radius: 6px;
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-size: 24px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ref,
+.ref a {
+  margin-top: 50px;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #bdbdbd;
+  text-decoration: none;
+}
+
+.recipe-info {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  height: max-content;
+  padding: 45px;
+}
+
+.recipe-info article {
+  margin: 25px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.recipe-info .title {
+  font-weight: 700;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #bdbdbd;
+}
+
+.recipe-info .info {
+  font-weight: 500;
+  font-size: 14px;
+  color: #333333;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.recipe-info article > span {
+  font-size: 32px;
+}
+
+.yields > span,
+.yields .info {
+  color: #f2994a;
+}
+
+footer {
+  text-align: center;
+  margin-top: 32px;
+}
+
+footer a {
+  color: #f2994a;
+  font-weight: 500;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    padding: 32px 10px;
+  }
+  header > h1 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .intro p {
+    font-size: 12px;
+    line-height: 15px;
+    width: 100%;
+  }
+  main > img {
+    margin-top: 12px;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0;
+  }
+
+  .recipe-info {
+    box-shadow: none;
+    padding: 10px;
+  }
+
+  .recipe-info .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .recipe-info .title {
+    font-size: 8px;
+    line-height: 10px;
+  }
+
+  .recipe-info .info {
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .recipe-info article > span {
+    font-size: 26px;
+  }
+
+  .recipe-info article {
+    margin: 10px 0;
+  }
+
+  section > article > h1 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+
+  section > article > div > h1 {
+    font-size: 16px;
+    margin: 8px 0;
+  }
+
+  .ingredients p {
+    font-size: 14px;
+  }
+
+  .list-item span {
+    font-size: 16px;
+  }
+
+  .ref,
+  .ref a {
+    font-size: 12px;
+  }
+}
